@@ -29,8 +29,8 @@ public class WebApp {
                 + "<html>"
                 + "<body>"
                 + "<h2>Calculadora de Fibonacci</h2>"
-                + "<h4>A continuacion ingrese el número que desea evaluar</h4>"
-                + "<h4>NOTA: Por favor solo ingrese numeros enteros, no son válidas las letras</h4>"
+                + "<h4>A continuacion ingrese el numero que desea evaluar</h4>"
+                + "<h4>NOTA: Por favor solo ingrese numeros enteros, no son validas las letras</h4>"
                 + "<form action=\"/results\">"
                 + "  Valor:"
                 + "  <input type=\"text\" name=\"data\" size= 20 placeholder=\"10\n\">"
@@ -54,7 +54,7 @@ public class WebApp {
             number = Integer.parseInt(req.queryParams("data"));
         }
         value = Fibonacci.calculate(number);
-        return "El número de Fibonacci para el valor " + req.queryParams("data") + " es: " + value;
+        return "El numero de Fibonacci para el valor " + req.queryParams("data") + " es: " + value;
     }
 
     /**
